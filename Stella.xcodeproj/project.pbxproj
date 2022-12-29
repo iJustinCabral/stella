@@ -51,6 +51,9 @@
 		E376C07C295DEB1000547BDA /* Stella */ = {
 			isa = PBXGroup;
 			children = (
+				E376C08D295DEB9100547BDA /* Views */,
+				E376C08C295DEB8B00547BDA /* Model */,
+				E376C08B295DEB8300547BDA /* Service */,
 				E376C07D295DEB1000547BDA /* StellaApp.swift */,
 				E376C07F295DEB1000547BDA /* ContentView.swift */,
 				E376C081295DEB1100547BDA /* Assets.xcassets */,
@@ -65,6 +68,27 @@
 				E376C084295DEB1100547BDA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E376C08B295DEB8300547BDA /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		E376C08C295DEB8B00547BDA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E376C08D295DEB9100547BDA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
