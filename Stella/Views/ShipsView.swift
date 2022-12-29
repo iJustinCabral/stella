@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  ShipsView.swift
 //  Stella
 //
 //  Created by Justin Cabral on 12/29/22.
@@ -7,51 +7,41 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    
+struct ShipsView: View {
     @StateObject private var viewModel = StellaViewModel(service: StellaService())
     
     var body: some View {
         NavigationStack {
             Group {
                 switch viewModel.state {
-                case .rocketsSuccess(let rockets):
+                case .shipsSuccess(let ships):
                     ScrollView {
-                        ForEach(rockets, id: \.self) { rocket in
-                            NavigationLink {
-                                Text(rocket.name)
-                            }
-                            label: {
-                                RocketView(rocket: rocket)
-                            }
+                        ForEach(ships, id:\.self) { ship in
+                            ShipView(ship: ship)
                         }
                     }
                 case .loading:
                     VStack {
                         ProgressView()
-                        Text("Loading Rockets...")
+                        Text("Loading ships...")
                     }
                 case .failed(let error):
                     Text(error.localizedDescription)
                 default:
-                    Button("Load Rockets") {
-                        Task {
-                            await viewModel.getRockets()
-                        }
-                    }
+                    Text("Ships View")
                 }
             }
-            .navigationTitle("Rockets")
+            .navigationTitle("Drone Ships")
         }
         .task {
-            await viewModel.getRockets()
+            await viewModel.getShips()
         }
     }
     
     @ViewBuilder
-    func RocketView(rocket: Rocket) -> some View {
+    func ShipView(ship: Ship) -> some View {
         ZStack(alignment: .bottomLeading) {
-            AsyncImage(url: URL(string: rocket.flickr_images[0])) { phase in
+            AsyncImage(url: URL(string: ship.image ?? "No Image Available")) { phase in
                 if let image = phase.image {
                     image
                         .resizable()
@@ -61,7 +51,7 @@ struct ContentView: View {
             }
             .padding()
             
-            Text(rocket.name)
+            Text(ship.name)
                 .padding(6)
                 .background(.thinMaterial)
                 .foregroundColor(.white)
@@ -73,8 +63,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct ShipsView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ShipsView()
     }
 }

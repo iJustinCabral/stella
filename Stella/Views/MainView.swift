@@ -15,17 +15,17 @@ struct MainView: View {
                     Label("Rockets", systemImage: "globe.americas.fill")
                 }
             
-            ContentView()
+            DragonsView()
                 .tabItem {
                     Label("Dragons", systemImage: "character.duployan")
                 }
             
-            ContentView()
+            ShipsView()
                 .tabItem {
                     Label("Drone Ships", systemImage: "ferry")
                 }
             
-            ContentView()
+            HistoryView()
                 .tabItem {
                     Label("History", systemImage: "newspaper")
                 }

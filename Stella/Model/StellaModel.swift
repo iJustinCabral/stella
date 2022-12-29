@@ -20,3 +20,26 @@ struct Rocket: Codable, Hashable {
     let id: String
     let flickr_images: [String]
 }
+
+struct Dragon: Codable, Hashable {
+    let name: String
+    let type: String
+    let active: Bool
+    let crew_capacity: Int
+    let description: String
+    let flickr_images: [String]
+}
+
+struct Ship: Codable, Hashable {
+    let type: String
+    let home_port: String
+    let image: String?
+    let name: String
+    let active: Bool
+}
+
+struct History: Codable, Hashable {
+    let title: String
+    let event_date_unix: Int
+    let details: String
+}

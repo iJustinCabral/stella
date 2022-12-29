@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  DragonsView.swift
 //  Stella
 //
 //  Created by Justin Cabral on 12/29/22.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct DragonsView: View {
     
     @StateObject private var viewModel = StellaViewModel(service: StellaService())
     
@@ -15,43 +15,34 @@ struct ContentView: View {
         NavigationStack {
             Group {
                 switch viewModel.state {
-                case .rocketsSuccess(let rockets):
+                case .dragonsSuccess(let dragons):
                     ScrollView {
-                        ForEach(rockets, id: \.self) { rocket in
-                            NavigationLink {
-                                Text(rocket.name)
-                            }
-                            label: {
-                                RocketView(rocket: rocket)
-                            }
+                        ForEach(dragons, id:\.self) { dragon in
+                            DragonView(dragon: dragon)
                         }
                     }
                 case .loading:
                     VStack {
                         ProgressView()
-                        Text("Loading Rockets...")
+                        Text("Loading Dragons...")
                     }
                 case .failed(let error):
                     Text(error.localizedDescription)
                 default:
-                    Button("Load Rockets") {
-                        Task {
-                            await viewModel.getRockets()
-                        }
-                    }
+                    Text("Dragon View")
                 }
             }
-            .navigationTitle("Rockets")
+            .navigationTitle("Dragon Capsules")
         }
         .task {
-            await viewModel.getRockets()
+            await viewModel.getDragons()
         }
     }
     
     @ViewBuilder
-    func RocketView(rocket: Rocket) -> some View {
+    func DragonView(dragon: Dragon) -> some View {
         ZStack(alignment: .bottomLeading) {
-            AsyncImage(url: URL(string: rocket.flickr_images[0])) { phase in
+            AsyncImage(url: URL(string: dragon.flickr_images[0])) { phase in
                 if let image = phase.image {
                     image
                         .resizable()
@@ -61,7 +52,7 @@ struct ContentView: View {
             }
             .padding()
             
-            Text(rocket.name)
+            Text(dragon.name)
                 .padding(6)
                 .background(.thinMaterial)
                 .foregroundColor(.white)
@@ -73,8 +64,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct DragonsView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        DragonsView()
     }
 }

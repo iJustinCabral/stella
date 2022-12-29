@@ -15,6 +15,9 @@
 		E376C091295DEDC100547BDA /* StellaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E376C090295DEDC100547BDA /* StellaModel.swift */; };
 		E376C094295DEED200547BDA /* StellaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E376C093295DEED200547BDA /* StellaViewModel.swift */; };
 		E376C096295DFB2700547BDA /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E376C095295DFB2700547BDA /* MainView.swift */; };
+		E376C098295E3FC500547BDA /* DragonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E376C097295E3FC500547BDA /* DragonsView.swift */; };
+		E376C09A295E408500547BDA /* ShipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E376C099295E408500547BDA /* ShipsView.swift */; };
+		E376C09C295E408F00547BDA /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E376C09B295E408F00547BDA /* HistoryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,9 @@
 		E376C090295DEDC100547BDA /* StellaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StellaModel.swift; sourceTree = "<group>"; };
 		E376C093295DEED200547BDA /* StellaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StellaViewModel.swift; sourceTree = "<group>"; };
 		E376C095295DFB2700547BDA /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		E376C097295E3FC500547BDA /* DragonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonsView.swift; sourceTree = "<group>"; };
+		E376C099295E408500547BDA /* ShipsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipsView.swift; sourceTree = "<group>"; };
+		E376C09B295E408F00547BDA /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,9 @@
 			children = (
 				E376C095295DFB2700547BDA /* MainView.swift */,
 				E376C07F295DEB1000547BDA /* ContentView.swift */,
+				E376C097295E3FC500547BDA /* DragonsView.swift */,
+				E376C099295E408500547BDA /* ShipsView.swift */,
+				E376C09B295E408F00547BDA /* HistoryView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -185,7 +194,10 @@
 				E376C096295DFB2700547BDA /* MainView.swift in Sources */,
 				E376C080295DEB1000547BDA /* ContentView.swift in Sources */,
 				E376C091295DEDC100547BDA /* StellaModel.swift in Sources */,
+				E376C09A295E408500547BDA /* ShipsView.swift in Sources */,
 				E376C07E295DEB1000547BDA /* StellaApp.swift in Sources */,
+				E376C098295E3FC500547BDA /* DragonsView.swift in Sources */,
+				E376C09C295E408F00547BDA /* HistoryView.swift in Sources */,
 				E376C094295DEED200547BDA /* StellaViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
