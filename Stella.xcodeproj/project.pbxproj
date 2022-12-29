@@ -11,6 +11,10 @@
 		E376C080295DEB1000547BDA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E376C07F295DEB1000547BDA /* ContentView.swift */; };
 		E376C082295DEB1100547BDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E376C081295DEB1100547BDA /* Assets.xcassets */; };
 		E376C085295DEB1100547BDA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E376C084295DEB1100547BDA /* Preview Assets.xcassets */; };
+		E376C08F295DECF400547BDA /* StellaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E376C08E295DECF400547BDA /* StellaService.swift */; };
+		E376C091295DEDC100547BDA /* StellaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E376C090295DEDC100547BDA /* StellaModel.swift */; };
+		E376C094295DEED200547BDA /* StellaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E376C093295DEED200547BDA /* StellaViewModel.swift */; };
+		E376C096295DFB2700547BDA /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E376C095295DFB2700547BDA /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		E376C07F295DEB1000547BDA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E376C081295DEB1100547BDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E376C084295DEB1100547BDA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E376C08E295DECF400547BDA /* StellaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StellaService.swift; sourceTree = "<group>"; };
+		E376C090295DEDC100547BDA /* StellaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StellaModel.swift; sourceTree = "<group>"; };
+		E376C093295DEED200547BDA /* StellaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StellaViewModel.swift; sourceTree = "<group>"; };
+		E376C095295DFB2700547BDA /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,11 +59,11 @@
 		E376C07C295DEB1000547BDA /* Stella */ = {
 			isa = PBXGroup;
 			children = (
+				E376C092295DEEBE00547BDA /* ViewModel */,
 				E376C08D295DEB9100547BDA /* Views */,
 				E376C08C295DEB8B00547BDA /* Model */,
 				E376C08B295DEB8300547BDA /* Service */,
 				E376C07D295DEB1000547BDA /* StellaApp.swift */,
-				E376C07F295DEB1000547BDA /* ContentView.swift */,
 				E376C081295DEB1100547BDA /* Assets.xcassets */,
 				E376C083295DEB1100547BDA /* Preview Content */,
 			);
@@ -73,6 +81,7 @@
 		E376C08B295DEB8300547BDA /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				E376C08E295DECF400547BDA /* StellaService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -80,6 +89,7 @@
 		E376C08C295DEB8B00547BDA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E376C090295DEDC100547BDA /* StellaModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -87,8 +97,18 @@
 		E376C08D295DEB9100547BDA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E376C095295DFB2700547BDA /* MainView.swift */,
+				E376C07F295DEB1000547BDA /* ContentView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		E376C092295DEEBE00547BDA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E376C093295DEED200547BDA /* StellaViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,8 +181,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E376C08F295DECF400547BDA /* StellaService.swift in Sources */,
+				E376C096295DFB2700547BDA /* MainView.swift in Sources */,
 				E376C080295DEB1000547BDA /* ContentView.swift in Sources */,
+				E376C091295DEDC100547BDA /* StellaModel.swift in Sources */,
 				E376C07E295DEB1000547BDA /* StellaApp.swift in Sources */,
+				E376C094295DEED200547BDA /* StellaViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
