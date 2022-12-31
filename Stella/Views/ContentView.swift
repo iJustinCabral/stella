@@ -19,7 +19,7 @@ struct ContentView: View {
                     ScrollView {
                         ForEach(rockets, id: \.self) { rocket in
                             NavigationLink {
-                                Text(rocket.name)
+                                RocketDetailView(rocket: rocket)
                             }
                             label: {
                                 RocketView(rocket: rocket)
