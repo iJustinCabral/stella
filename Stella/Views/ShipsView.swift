@@ -17,7 +17,11 @@ struct ShipsView: View {
                 case .shipsSuccess(let ships):
                     ScrollView {
                         ForEach(ships, id:\.self) { ship in
-                            ShipView(ship: ship)
+                            NavigationLink(destination: {
+                                ShipDetailView(ship: ship)
+                            }, label: {
+                                ShipView(ship: ship)
+                            })
                         }
                     }
                 case .loading:

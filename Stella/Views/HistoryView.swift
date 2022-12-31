@@ -18,7 +18,7 @@ struct HistoryView: View {
                     List {
                         ForEach(histories, id:\.self) { history in
                             NavigationLink {
-                                Text("History View")
+                                HistoryDetailView(history: history)
                             } label: {
                                 HistoryView(history: history)
                             }

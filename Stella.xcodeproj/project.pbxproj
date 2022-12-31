@@ -19,6 +19,9 @@
 		E376C09A295E408500547BDA /* ShipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E376C099295E408500547BDA /* ShipsView.swift */; };
 		E376C09C295E408F00547BDA /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E376C09B295E408F00547BDA /* HistoryView.swift */; };
 		E376C09E295FA8F000547BDA /* RocketDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E376C09D295FA8F000547BDA /* RocketDetailView.swift */; };
+		E376C0A02960C06A00547BDA /* DragonDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E376C09F2960C06A00547BDA /* DragonDetailView.swift */; };
+		E376C0A22960C16100547BDA /* ShipDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E376C0A12960C16100547BDA /* ShipDetailView.swift */; };
+		E376C0A42960C2C600547BDA /* HistoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E376C0A32960C2C600547BDA /* HistoryDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +38,9 @@
 		E376C099295E408500547BDA /* ShipsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipsView.swift; sourceTree = "<group>"; };
 		E376C09B295E408F00547BDA /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		E376C09D295FA8F000547BDA /* RocketDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketDetailView.swift; sourceTree = "<group>"; };
+		E376C09F2960C06A00547BDA /* DragonDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonDetailView.swift; sourceTree = "<group>"; };
+		E376C0A12960C16100547BDA /* ShipDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipDetailView.swift; sourceTree = "<group>"; };
+		E376C0A32960C2C600547BDA /* HistoryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,8 +115,11 @@
 				E376C07F295DEB1000547BDA /* ContentView.swift */,
 				E376C09D295FA8F000547BDA /* RocketDetailView.swift */,
 				E376C097295E3FC500547BDA /* DragonsView.swift */,
+				E376C09F2960C06A00547BDA /* DragonDetailView.swift */,
 				E376C099295E408500547BDA /* ShipsView.swift */,
+				E376C0A12960C16100547BDA /* ShipDetailView.swift */,
 				E376C09B295E408F00547BDA /* HistoryView.swift */,
+				E376C0A32960C2C600547BDA /* HistoryDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -194,9 +203,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E376C08F295DECF400547BDA /* StellaService.swift in Sources */,
+				E376C0A22960C16100547BDA /* ShipDetailView.swift in Sources */,
 				E376C096295DFB2700547BDA /* MainView.swift in Sources */,
+				E376C0A02960C06A00547BDA /* DragonDetailView.swift in Sources */,
 				E376C080295DEB1000547BDA /* ContentView.swift in Sources */,
 				E376C091295DEDC100547BDA /* StellaModel.swift in Sources */,
+				E376C0A42960C2C600547BDA /* HistoryDetailView.swift in Sources */,
 				E376C09A295E408500547BDA /* ShipsView.swift in Sources */,
 				E376C07E295DEB1000547BDA /* StellaApp.swift in Sources */,
 				E376C098295E3FC500547BDA /* DragonsView.swift in Sources */,

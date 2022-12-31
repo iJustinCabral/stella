@@ -18,7 +18,12 @@ struct DragonsView: View {
                 case .dragonsSuccess(let dragons):
                     ScrollView {
                         ForEach(dragons, id:\.self) { dragon in
-                            DragonView(dragon: dragon)
+                            NavigationLink(destination: {
+                                DragonDetailView(dragon: dragon)
+                            }
+                                           , label: {
+                                DragonView(dragon: dragon)
+                            })
                         }
                     }
                 case .loading:
